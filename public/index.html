@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaChat</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <form class="form">
+        <h1>Join Chatroom</h1>
+        <label for="user">UserName</label>
+        <br>
+        <div>
+            <input type="text" name="user" placeholder="John" id="username" required="true">
+            <button type="button" id="joinBtn">Join Chat</button>
+        </div>
+    </form>
+
+    <div class="chatRoomCont">
+        <div class="exit"><button id="exit-btn">x</button></div>
+        <h1 class="chatRoomHead">
+            <span id="icon"><img src="../chat.png" alt="icon"></span>
+            InstaChat
+        </h1>
+        <div class="messages">
+        </div>
+        <div class="sendCont">
+            <input type="text" name="sendinput" placeholder="Enter message" id="sendInput">
+            <button type="button" id="send-btn">Send</button>
+        </div>
+        
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

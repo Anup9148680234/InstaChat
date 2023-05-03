@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500&display=swap');
+
+*{
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, #833ab4, #fd1d1d,#fcb045);
+}
+
+.form{
+    border: 2px solid;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#username{
+    font-family: 'Red Hat Text', sans-serif;
+    border-radius: 0.5rem;
+}
+
+#username:focus{
+    outline: none;
+    box-shadow: 1px 1px rgb(123, 123, 123);
+}
+
+#joinBtn{
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+#icon > img{
+    position: relative;
+    top: 7px;
+    width: 35px;
+    height: 35px;
+}
+
+.chatRoomCont{
+    display: none;
+    height: 85vh;
+    border: 1px solid black;
+    width: 90vw;
+    
+}
+
+.chatRoomHead{
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    margin-top: -0.1rem;
+    
+}
+
+.messages{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: -1rem;
+}
+
+.message{
+    background-color: gainsboro;
+    width: fit-content;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.sent{
+    align-self: flex-end;
+}
+
+.sent::after{
+    content: "";
+    position: relative;
+    right: -30px;
+    border-left: 10px solid gainsboro;
+    border-right: 10px solid rgba(252, 252, 252,0);
+    border-bottom: 10px solid rgba(252, 252, 252,0);
+    border-top: 10px solid rgba(252, 252, 252,0);
+    display: inline-block;
+}
+
+.recieved{
+    align-self: flex-start;
+}
+
+
+.recieved::before{
+    content: "";
+    position: relative;
+    left: -30px;
+    border-left: 10px solid rgba(252, 252, 252,0);
+    border-right: 10px solid gainsboro;
+    border-bottom: 10px solid rgba(252, 252, 252,0);
+    border-top: 10px solid rgba(252, 252, 252,0);
+    display: inline-block;
+}
+
+
+
+.sendCont{
+    margin-top: 1.5vh;
+    width: 90vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sendInput{
+    width: 75vw;
+}
+
+#send-btn{
+    padding: 0;
+    width: 15vw;
+}
+
+p{
+    text-align: center;
+}
+
+.exit{
+    position: absolute;
+    right: 5vw;
+    top: 9.5vh;
+}
+
+#exit-btn{
+    width: 30px;
+    height: 28px;
+    font-size: 1rem;
+    position: relative;
+    z-index: 100;
+    background-color: black;
+    color: white;
+    float: right;
+    border: 2px solid white
+}
+
+#exit-btn:hover{
+    border: 2px solid rgb(114, 114, 114);
+}
