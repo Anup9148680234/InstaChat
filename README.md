@@ -9,10 +9,11 @@ Features:
 - Users can exit the chatroom and see a message when another user leaves.
 
 Installation:
-- Clone the repository: git clone https://github.com/YOUR_USERNAME/chatroom.git
-- Install the required dependencies: npm install
-- Start the server: npm start
-- Open the chatroom in your web browser: http://localhost:3000
+```
+ git clone https://github.com/Anup9148680234/InstaChat.git
+ npm install
+ npm start
+```
 
 Usage:
 - Enter your name in the username input box and click the "Join" button.
